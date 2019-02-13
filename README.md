@@ -1,8 +1,9 @@
 # Data Mining Techniques - Chess (Neo4j)
 
-Description
 You are given a file that contains the data from 684 chess games played in world chess tournaments. Specifically, the file includes the players' details, the tournaments, the date, the result of the game, as well as all the moves of each game and the positions that occur in the chessboard with each move. You can find the file with all games in moodle (chessData.txt) along with the description for each component of the file (dataDescription.txt).
+
 You are asked to model the data as a property graph by designing the appropriate entities and assigning the relevant labels, types and properties. For this task, you will need to study the chessData.txt file details as described in dataDescription.txt. From this data, all elements of a chess game must be represented as nodes and edges, and especially all the positions and moves depicted in each instance of the file. All positions on the chessboard are unique (same positions may occur in several games), in your database you should create position nodes uniquely described by their FEN property. When you design your model, in each different node and edge type, you should include only the elements that describe it, there should be no repetitions of elements (for example the same property being displayed on both a node and an edge). Finally, nodes should not be connected when this is not required by the model.
+
 Based on the model you have designed, you should then create a graph database instance on Neo4j and load the data that you are given. In particular, you should create a small program in a language of your choice, which will accept the file with the data given and create new files (csv) suitable for loading into neo4j. Finally, after entering the data in your database, you are asked to write and execute the following queries using the Cypher language. To speed up loading and query response times, you could also create the right indexes.
 
 Queries
